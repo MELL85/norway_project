@@ -1,0 +1,259 @@
+.places {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 24px 90px 24px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--title-font-color);
+}
+
+.places__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+}
+
+.places__list {
+  margin-top: 50px;
+}
+
+.places__preview__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.places__point__text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: .03em;
+  color: var(--chapter-font-color);
+}
+
+.places__header__caption {
+  font-size: 13px;
+  color: var(--chapter-font-color);
+}
+
+.places__header__title {
+  margin-top: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  color: var(--title-font-color);
+}
+
+.places__header__description {
+  margin-top: 25px;
+  font-weight: inherit;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--title-font-color);
+}
+
+.places__nav {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+  overflow-y: visible;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.places__nav:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  opacity: .125;
+  background-color: var(--background-dark);
+}
+
+.places__nav__tab {
+  cursor: pointer;
+	position: relative;
+}
+
+.places__nav__tab:active {
+  font-weight: bold;
+  color: var(--title-font-color);
+}
+
+.nav__tab__active {
+  border-bottom: 2px solid  var(--sign-start-color);
+}
+
+.nav__tab__active .places__nav__tab-title {
+  color: var(--title-font-color);
+}
+
+.places__nav__tab-title {
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  white-space: nowrap;
+  color: var(--title-font-color);
+}
+
+.nav__tab__title:active {
+  color: var(--title-font-color);
+}
+
+.places__content {
+  display: none;
+}
+
+.content__tab__active {
+  display: grid;
+}
+
+.places__nav__tab-title {
+  padding: 15px 20px 15px 20px;
+  font-weight: 700;
+  color:  #969799;
+}
+
+.places__info {
+  display: grid;
+  padding: 39px 43px;
+}
+
+.places__header__text {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  color: var(--title-font-color);
+}
+
+.places__night__hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  line-height: 1.7;
+}
+
+.places__night {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.places__hotel {
+  width: 100%;
+}
+
+.places__night-count {
+  font-size: 19px;
+  font-weight: 700;
+  color:  var(--sign-start-color);
+}
+
+.places__hotel-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--title-font-color);
+}
+
+@media screen and (min-width: 767px)  {
+  .places {
+    padding: 60px 32px 110px 32px;
+  }
+
+  .places__header__text {
+    font-size: 36px;
+  }
+
+  .places__night__hotel {
+    flex-direction: row;
+    margin-top: 33px;
+  }
+
+  .places__night {
+    margin-bottom: 0;
+  }
+
+  .places__info {
+    padding: 46px 52px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .places {
+    padding: 60px 40px 130px 40px;
+  }
+
+  .places__hotel-name {
+    font-size: 15px;
+  }
+
+  .places__info {
+    padding: 60px 70px;
+  }
+
+  .places__header {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .places {
+    padding: 60px 15px 130px 15px;
+  }
+}
+
+.places__description {
+  margin-top: 30px;
+}
+
+.places__description__text {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  line-height: 1.7;
+  color: #707070;
+}
+
+.places__details {
+  margin-top: 20px;
+}
+
+.places__benefit {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.places__benefit__text {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--title-font-color);
+}
+
+.places__icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 24px;
+}
+
+.places__bottom {
+  margin-bottom: 0px;
+  margin-top: 42px;
+}
+
+.places__bottom__container {
+  display: flex;
+  background-color: var(--background-bottom-color);
+  height: 42px;
+  width: 134px;
+  justify-content: center;
+  align-items: center;
+}
+
+.places__bottom__book-now {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--title-font-color-light);
+  text-decoration: none;
+}

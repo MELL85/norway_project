@@ -1,0 +1,169 @@
+.stunning-spots__carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.stunning-spots__carousel_btn-prev {
+    position: absolute;
+    left: 2.5%;
+}
+
+.stunning-spots__carousel_btn-next {
+    position: absolute;
+    left: 97.5%;
+}
+
+.stunning-spots__carousel_btn-prev,
+.stunning-spots__carousel_btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-color: transparent;
+    background-color: transparent;
+    -webkit-text-stroke: 1px var(--title-font-color);
+    font-size: 45px;
+    color: var(--title-font-color-light);
+    transition: 0.3s all;
+}
+
+.stunning-spots__carousel_btn-prev:hover,
+.stunning-spots__carousel_btn-next:hover {
+    color: var(--title-font-color-light);
+    -webkit-text-stroke: 0;
+    text-shadow: 3px 3px 7px var(--title-font-color-light), -3px -3px 7px var(--title-font-color-light), -3px 3px 7px var(--title-font-color-light), 3px -3px 7px var(--title-font-color-light);
+}
+
+.stunning-spots__carousel_slide-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stunning-spots__carousel_slide-container img {
+    display: block;
+    max-width: 100%;
+    height: 325px;
+    aspect-ratio: 8 / 7;
+    object-fit: cover;
+    object-position: 50% 70%;
+    cursor: pointer;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5em auto 7em auto;
+}
+
+.carousel-indicators button {
+    width: 11px;
+    height: 11px;
+    margin: 0 10px 0 10px;
+    background-color: var(--title-font-color);
+    border-color: transparent;
+    border-radius: 50%;
+    transition: 0.3s all;
+}
+
+.carousel-indicators button:hover {
+    background-color: var(--title-font-color-light);
+    box-shadow: 3px 3px 7px var(--title-font-color-light), -3px -3px 7px var(--title-font-color-light), -3px 3px 7px var(--title-font-color-light), 3px -3px 7px var(--title-font-color-light);
+}
+
+.carousel-indicators #push_button {
+    background-color: var(--title-font-color-light);
+}
+
+.stunning-spots__modal_window {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.stunning-spots__modal_window.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.stunning-spots__modal_window.open .stunning-spots__modal_window_content {
+    transform: translate(0px, 0px);
+    opacity: 1; 
+}
+
+.stunning-spots__modal_window_body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stunning-spots__modal_window_content {
+    position: relative;
+    min-width: 240px;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    transform: translate(0px, -100%);
+    z-index: 0;
+}
+
+.stunning-spots__modal_window_content img {
+    max-width: 100%;
+    max-height: 940px;
+}
+
+.stunning-spots__modal_window_navigation {
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    text-align: end;
+    z-index: 1;
+}
+
+.stunning-spots__modal_window_close {
+    color: var(--chapter-font-color);
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 5px 15px;
+}
+
+.stunning-spots__modal_window_galery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+}
+
+.stunning-spots__modal_window_prev, .stunning-spots__modal_window_next {
+    color: var(--chapter-font-color);
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 45px;
+}
+
+.stunning-spots__modal_window_prev {
+    transform: rotate(45deg);
+}
+
+.stunning-spots__modal_window_next {
+    transform: rotate(-135deg);
+}
+
+.stunning-spots__modal_window_close:hover, .stunning-spots__modal_window_prev:hover, .stunning-spots__modal_window_next:hover {
+    color: var(--title-font-color-light);
+    text-shadow: 3px 3px 7px var(--title-font-color-light), -3px -3px 7px var(--title-font-color-light), -3px 3px 7px var(--title-font-color-light), 3px -3px 7px var(--title-font-color-light);
+    transition: 0.3s all;
+}

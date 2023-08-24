@@ -1,0 +1,167 @@
+.testimonials__section {
+  background-position: 50% 70%;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    url(../img/testimonials-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sign-start-chapter {
+  color: var(--sign-start-color);
+}
+
+.carousel-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.testimonials__section-title {
+  font-weight: 500;
+  color: var(--title-font-color);
+  padding-top: 7rem;
+  font-size: 90%;
+  text-align: center;
+}
+
+.testimonials__travelers-share {
+  font-family: Playfair Display;
+  font-weight: 700;
+  color: var(--title-font-color);
+  margin-top: 2rem;
+  font-size: 300%;
+  text-align: center;
+}
+
+.testimonials__about-norway {
+  line-height: 1.9rem;
+  color: var(--title-font-color);
+  margin-top: 3rem;
+  font-size: 120%;
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.carousel-container {
+  display: block;
+  width: 100%;
+}
+
+.images-slides {
+  display: none;
+}
+
+.carousel-images {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.testimonials-img {
+  width: 125px;
+  height: 125px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 3.5rem;
+}
+.carousel-title {
+  color: var(--title-font-color);
+  font-weight: 500;
+  margin-top: 1.5rem;
+  font-size: 150%;
+  text-align: center;
+}
+
+.carousel-text-block {
+  color: var(--title-font-color);
+  line-height: 1.9rem;
+  margin-top: 2rem;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.carousel-date {
+  color: var(--title-font-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 100%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  padding: 16px;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  color: var(--title-font-color);
+  opacity: 0.7;
+  position: absolute;
+  margin-top: -20%;
+}
+
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.local-dots {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.activity,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

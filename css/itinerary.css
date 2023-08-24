@@ -1,0 +1,90 @@
+.tour-itinerary_inner {
+    color: var(--chapter-font-color);
+    background-color:var(--background-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 30px 24px 90;
+}
+.tour-itinerary-items {
+    padding: 0px 15px;
+    width: auto;
+}
+.map-of-norway-image{
+    display:block;
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px;
+    object-fit:cover;
+}
+.tour-itinerary-header{
+    display: flex;
+}
+.tour-itinerary-header-name {
+    font-size: 12px;
+    margin-top: 50px; 
+}
+.tour-itinerary-title{
+    margin-top: 20px;
+}
+.tour-itinerary-chapter{
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: 0.51px;
+    line-height: 28.9px;
+    overflow-wrap: break-word;
+    text-align: left;
+    color: var(--color-accordion);
+}
+.tour-itinerary-guarantees{
+   margin-top: 20px;
+}
+.tour-itinerary-guarantees-card{
+    margin: 7.5px 0;
+    display: inline-block;
+    padding: 7.5px 0;
+    overflow-wrap: break-word;
+    text-align: left;
+    flex-direction: row;
+}
+.tour-itinerary-guarantees-card-title{
+    margin-top: 20px;
+    color: var(--title-font-color-light);
+    font-size: 21px;
+    font-weight: 700;
+}
+.tour-itinerary-guarantees-card-icon{
+    border-radius: 15%;
+    width: 40px;
+    height: 40px;
+}
+.tour-itinerary-guarantees-card-chapter{
+    line-height: 24px;
+    color: var(--color-accordion);
+    flex-direction: column;
+}
+@media (min-width: 992px) {
+    .tour-itinerary_inner{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:flex-start;
+        padding: 90px, 240px, 90px;
+    }
+    .map-of-norway-image{
+        width: auto;
+    }
+}
+@media (min-width: 760px) {
+    .tour-itinerary_inner{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+    }
+    .map-of-norway-image{
+        width: auto;
+    }
+}
