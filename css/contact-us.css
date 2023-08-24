@@ -3,14 +3,18 @@
     background-size: cover;
     background-attachment: fixed;
 }
-.contact-us__main-form {
-    margin: 0 15px;
+
+.contact-us__all {
+    display: flex;
+    padding: 90px 0;
 }
+
 .contact-us__main-form-description {
     line-height: 1.7;
     font-weight: 400;
     font-size: 17px;
 }
+
 .contact-us__main-form-title {
     color: var(--chapter-font-color-light);
     font-size: 19px;
@@ -93,7 +97,6 @@
     flex-direction: column;
     background-color: var(--background-dark); 
     padding: 43px 39px;
-    margin: 0 15px;
 }
 .contact-us__main-form-title {
     letter-spacing: .03em;
@@ -109,12 +112,6 @@
 .contact-us__main-form-empty {
     display: none;
     padding: 0 15px;
-}
-.contact-us__all {
-    display: flex;
-    max-width: 1200px;
-    margin: auto;
-    padding: 90px 24px;
 }
 .contact-us__head-title {
     margin-top: 20px;
@@ -133,16 +130,18 @@
     }
     .contact-us__main-form {
         padding: 52px 46px;
+        flex: .9;
     }
  }
  @media screen and (min-width: 991px) {
     .contact-us__all {
-        padding: 130px 40px;
+        padding: 130px 0;
     }
     .title-font-light {
         font-size: 45px;
     }
     .contact-us__main-form {
         padding: 70px 60px;
+        flex: .85;
     }
  }

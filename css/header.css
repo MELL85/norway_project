@@ -1,13 +1,8 @@
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
 
 .header {
     background-image: url(../img/header-norway-background.png);
     background-size: cover;
-    margin: auto;
-    padding: 30px 24px 0;
+    padding: 30px 0 0;
     background-position: 100% 100%;
 }
 
@@ -26,7 +21,6 @@
         justify-content: space-between;
         align-items: center;
         flex: 1;
-        margin: auto;
     }
 }
 

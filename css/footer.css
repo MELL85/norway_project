@@ -1,19 +1,20 @@
 .footer {
-    background: var(--background-dark-footer);
+    background-image: url(../img/footer_mountains_prllx.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 100px 0 80px;
 }
 
 .footer-contacts-main {
-    background-image: url(../img/footer_mountains_prllx.jpg);
-    background-position: center center;
-    background-size: cover;
+    padding: 0 -24px 80px;
 }
 
 .footer-contacts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 10rem;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 55px;
 }
 
 .footer-contacts__email,
@@ -23,7 +24,7 @@
     background: rgba(0, 0, 0, 0.65);
     display: grid;
     grid-template-rows: auto;
-    padding-bottom: 6rem;
+    padding: 47px 27px;
 }
 
 
@@ -44,13 +45,11 @@
 }
 
 
-/* EMAIL - card */
 .footer-contacts__email-img,
 .footer-contacts__phone-img,
 .footer-contacts__checkin-img {
     max-width: 70px;
     margin: auto;
-    margin-top: 5rem;
 }
 
 .footer-contacts__email,

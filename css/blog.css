@@ -1,5 +1,5 @@
 .section-blog {
-    padding: 0 24px;
+    padding: 90px 0 15px;
 }
 
 
@@ -17,27 +17,39 @@
 
 .section-blog__tittle-h2 {
     color: var(--title-font-color);       
-    padding-top: 7rem;
-    font-size: 90%;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
-    font: 0.8em sans-serif;
+    font: 12px sans-serif;
     text-transform: uppercase;
 }
 
 
 .sign-start-chapter {
     color: var(--sign-start-color);
+    padding: 5px;
 }
 
 .section-blog__tittle-h3 {
     color: rgb(80, 81, 85);
     font-family: Playfair Display;
     margin-top: 1.5rem;
-    font-size: 45px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+    .section-blog__tittle-h3 {
+        font-size: 39px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section-blog__tittle-h3 {
+        font-size: 45px;
+    }
 }
 
 .section-blog__blog-description {

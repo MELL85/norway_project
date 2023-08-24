@@ -4,6 +4,7 @@
     url(../img/testimonials-background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 90px 0;
 }
 
 .sign-start-chapter {
@@ -16,12 +17,18 @@
   margin: auto;
 }
 
+.testimonials__main {
+  margin: 50px 0 0;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .testimonials__section-title {
   font-weight: 500;
   color: var(--title-font-color);
-  padding-top: 7rem;
-  font-size: 90%;
-  text-align: center;
+  font-size: 12px;
 }
 
 .testimonials__travelers-share {
@@ -29,18 +36,33 @@
   font-weight: 700;
   color: var(--title-font-color);
   margin-top: 2rem;
-  font-size: 300%;
+  font-size: 34px;
   text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .testimonials__travelers-share {
+    font-size: 39px;
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+
+  .testimonials__section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .testimonials__about-norway {
   line-height: 1.9rem;
   color: var(--title-font-color);
-  margin-top: 3rem;
-  font-size: 120%;
-  text-align: center;
-  width: 60%;
-  margin-left: 20%;
+  margin-top: 25px;
+  font-size: 19px;
 }
 
 .carousel-container {
@@ -63,8 +85,8 @@
 }
 
 .testimonials-img {
-  width: 125px;
-  height: 125px;
+  width: 70px;
+  height: 70px;
   margin: 0 auto;
   overflow: hidden;
   margin-top: 3.5rem;
@@ -73,7 +95,7 @@
   color: var(--title-font-color);
   font-weight: 500;
   margin-top: 1.5rem;
-  font-size: 150%;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -81,8 +103,8 @@
   color: var(--title-font-color);
   line-height: 1.9rem;
   margin-top: 2rem;
-  width: 80%;
-  margin-left: 10%;
+  width: 70%;
+  margin-left: 17%;
   text-align: center;
 }
 
@@ -100,8 +122,13 @@
   justify-content: space-between;
 }
 
+.carousel__wrapper {
+  position: relative;
+}
+
 .prev,
 .next {
+
   cursor: pointer;
   padding: 16px;
   font-size: 28px;
@@ -110,7 +137,8 @@
   color: var(--title-font-color);
   opacity: 0.7;
   position: absolute;
-  margin-top: -20%;
+  top: 75px;
+  /* margin-top: -75%; */
 }
 
 
@@ -123,7 +151,6 @@
 .local-dots {
   display: flex;
   justify-content: center;
-  padding-bottom: 8rem;
 }
 
 .dot {

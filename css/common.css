@@ -12,6 +12,8 @@
   --background-bottom-color: #14a9ee; 
   --color-accordion: #A9A9A9;
   --background-dark-footer: rgb(0, 0, 0);
+
+  scroll-behavior: smooth;
 }
 
 * {
@@ -19,6 +21,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 .sign-start-chapter {
   color: var(--sign-start-color);
   font-size: 13px;

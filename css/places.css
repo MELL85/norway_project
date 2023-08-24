@@ -1,18 +1,16 @@
 .places {
-  max-width: 1200px;
-  margin: auto;
-  padding: 60px 24px 90px 24px;
+  padding: 60px 0 90px;
   font-family: 'Roboto', sans-serif;
   color: var(--title-font-color);
 }
 
 .places__content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+  display: flex;
+  flex-direction: column;
 }
 
-.places__list {
-  margin-top: 50px;
+.places__preview {
+  width: 100%;
 }
 
 .places__preview__image {
@@ -29,6 +27,11 @@
   color: var(--chapter-font-color);
 }
 
+.places__header {
+  display: flex;
+  flex-direction: column;
+}
+
 .places__header__caption {
   font-size: 13px;
   color: var(--chapter-font-color);
@@ -37,7 +40,7 @@
 .places__header__title {
   margin-top: 20px;
   font-family: 'Playfair Display', serif;
-  font-size: 45px;
+  font-size: 34px;
   color: var(--title-font-color);
 }
 
@@ -47,6 +50,10 @@
   font-size: 19px;
   line-height: 1.6;
   color: var(--title-font-color);
+}
+
+.places__list {
+  margin-top: 45px;
 }
 
 .places__nav {
@@ -103,7 +110,7 @@
 }
 
 .content__tab__active {
-  display: grid;
+  display: flex;
 }
 
 .places__nav__tab-title {
@@ -155,53 +162,6 @@
   color: var(--title-font-color);
 }
 
-@media screen and (min-width: 767px)  {
-  .places {
-    padding: 60px 32px 110px 32px;
-  }
-
-  .places__header__text {
-    font-size: 36px;
-  }
-
-  .places__night__hotel {
-    flex-direction: row;
-    margin-top: 33px;
-  }
-
-  .places__night {
-    margin-bottom: 0;
-  }
-
-  .places__info {
-    padding: 46px 52px;
-  }
-}
-
-@media screen and (min-width: 991px) {
-  .places {
-    padding: 60px 40px 130px 40px;
-  }
-
-  .places__hotel-name {
-    font-size: 15px;
-  }
-
-  .places__info {
-    padding: 60px 70px;
-  }
-
-  .places__header {
-    max-width: 60%;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .places {
-    padding: 60px 15px 130px 15px;
-  }
-}
-
 .places__description {
   margin-top: 30px;
 }
@@ -226,8 +186,8 @@
 }
 
 .places__benefit__text {
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 100;
   color: var(--title-font-color);
 }
 
@@ -256,4 +216,85 @@
   font-weight: 700;
   color: var(--title-font-color-light);
   text-decoration: none;
+}
+
+@media screen and (min-width: 767px)  {
+
+  .container {
+    padding: 0 32px;
+  }
+  .places {
+    padding: 60px 0 110px;
+  }
+
+  .places__header {
+    padding: 0 15px;
+    max-width: 67%;
+  }
+
+  .places__content {
+    flex-direction: row;
+  }
+
+  .places__content-tab {
+    display: flex;
+  }
+
+  .places__preview {
+    flex: 1;
+  }
+
+  .places__header__text {
+    font-size: 33px;
+  }
+
+  .places__night__hotel {
+    flex-direction: row;
+    margin-top: 33px;
+  }
+
+  .places__night {
+    margin-bottom: 0;
+  }
+
+  .places__info {
+    flex: .8;
+    padding: 46px 52px;
+  }
+
+  .places__header__title {
+    font-size: 39px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .places {
+    padding: 60px 0 130px;
+  }
+
+  .places__hotel-name {
+    font-size: 15px;
+  }
+
+  .places__info {
+    padding: 60px 70px;
+  }
+
+  .places__header {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .places {
+    padding: 60px 0 130px;
+  }
+
+  .places__header__title {
+    font-size: 45px;
+  }
+
+  .places__header__text {
+    font-size: 36px;
+  }
 }
