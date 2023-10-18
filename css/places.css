@@ -1,5 +1,5 @@
 .places {
-  padding: 60px 0 90px;
+  padding: 60px 0;
   font-family: 'Roboto', sans-serif;
   color: var(--title-font-color);
 }
@@ -77,7 +77,7 @@
 
 .places__nav__tab {
   cursor: pointer;
-	position: relative;
+  position: relative;
 }
 
 .places__nav__tab:active {
@@ -86,7 +86,7 @@
 }
 
 .nav__tab__active {
-  border-bottom: 2px solid  var(--sign-start-color);
+  border-bottom: 2px solid var(--sign-start-color);
 }
 
 .nav__tab__active .places__nav__tab-title {
@@ -116,7 +116,7 @@
 .places__nav__tab-title {
   padding: 15px 20px 15px 20px;
   font-weight: 700;
-  color:  #969799;
+  color: #969799;
 }
 
 .places__info {
@@ -152,7 +152,7 @@
 .places__night-count {
   font-size: 19px;
   font-weight: 700;
-  color:  var(--sign-start-color);
+  color: var(--sign-start-color);
 }
 
 .places__hotel-name {
@@ -218,11 +218,12 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 767px)  {
+@media screen and (min-width: 767px) {
 
   .container {
     padding: 0 32px;
   }
+
   .places {
     padding: 60px 0 110px;
   }
@@ -267,7 +268,7 @@
   }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
   .places {
     padding: 60px 0 130px;
   }

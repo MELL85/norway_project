@@ -8,12 +8,14 @@
     <title>Guided Tour</title>
     <link rel="shortcut icon" href="img/norway-icon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="js/places.js"></script>
-    <script defer src="js/template.js"></script>
     <script defer src="js/header-burger.js"></script>
     <script defer src="js/stunning-spots-carousel.js"></script>
     <script defer src="js/about-us.js"></script>
     <script defer src="js/faq-accordion.js"></script>
+    <script defer src="js/testimonials-carousel.js"></script>
 </head>
 
 <body>
@@ -54,7 +56,9 @@
                 </div>
                 <div class="header__info-container">
                     <div class="header__video-img">
-                        <img class="header__image-video" src="img/norway-video-img.png" alt="Video" />
+                        <a href="https://youtu.be/evoJ1sCPIR0?si=686zjHxKdqU2gRBm">
+                            <img class="header__image-video" src="img/norway-video-img.png" alt="Video" />
+                        </a>
                     </div>
                     <p class="header__info-subtitle">Next Trip to Norway</p>
                     <p class="header__info-price">$2300 | 17 NOV. - 22 NOV.</p>
@@ -251,7 +255,9 @@
 
                     <div class="about-norway__footer-img">
                         <div class="about-norway__footer-bg">
-                            <img src="img/youtube-logo.svg" width="50" alt="YouTube Logo" />
+                            <a href="https://youtu.be/qpr0H7VwAH0?si=x8H0SN9AILlH1XFM">
+                                <img src="img/youtube-logo.svg" width="50" alt="YouTube Logo" />
+                            </a>
                             <p class="about-norway__footer-text">
                                 Want to go fishing in Tromsø, Norway?
                             </p>
@@ -763,9 +769,9 @@
                     </p>
                 </div>
 
-                <div class="carousel__wrapper">
-                    <div class="carousel-container">
-                        <div class="images-slides fade">
+                <div class="swiper mySwiper carousel-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                             <div class="testimonials-img">
                                 <img class="carousel-images" src="img/testimonials-img1.png" alt="cole_tiers"
                                     width="150" />
@@ -783,7 +789,7 @@
                             </div>
                         </div>
 
-                        <div class="images-slides fade">
+                        <div class="swiper-slide">
                             <div class="testimonials-img">
                                 <img class="carousel-images" src="img/testimonials-img2.png" alt="lilland_forester"
                                     width="150" />
@@ -801,7 +807,7 @@
                             </div>
                         </div>
 
-                        <div class="images-slides fade">
+                        <div class="swiper-slide">
                             <div class="testimonials-img">
                                 <img class="carousel-images" src="img/testimonials-img3.png" alt="alice_hendricks"
                                     width="150" />
@@ -819,16 +825,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-nav">
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                </div>
 
-                <div class="local-dots">
-                    <span class="dot activity" onclick="currentSlide(1)"></span>
-                    <span class="dot activity" onclick="currentSlide(2)"></span>
-                    <span class="dot activity" onclick="currentSlide(3)"></span>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
